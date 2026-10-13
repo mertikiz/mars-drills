@@ -3,6 +3,8 @@
 NASA Space Apps 2026 hazırlığımızın **bireysel alıştırma** reposu. Her takım üyesi kendi klasöründe, gerçek Mars
 verisiyle küçük alıştırmalar yapar. Amaç araçları öğrenmek; **bu repo yarışma projesi değildir.**
 
+> **İlk kez mi geliyorsun?** Önce [`KURULUM.md`](KURULUM.md) (bir kerelik kurulum, ~1 saat).
+>
 > Ajanlar ve takım: kurallar [`AGENTS.md`](AGENTS.md) içinde. Planın tamamı ve karar listesi özel planlama
 > reposunda (`nasa-space-apps-2026`): `README.md` → `docs/notes/plan-current.md` → `docs/notes/prep-plan.md`.
 
