@@ -1,0 +1,30 @@
+# Data (large, re-downloadable) — keep sources in data cards
+data/
+*.tif
+*.tiff
+*.img
+*.IMG
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Node / Vite
+node_modules/
+dist/
+.vite/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
