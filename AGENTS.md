@@ -26,3 +26,10 @@ Bu repoda çalışan **tüm yapay zekâ ajanları** (Google Antigravity, Claude 
 7. Bu alıştırmalarda yazılan **Mars'a özgü mantık, veri işleme ve rota kodu** yarışma reposuna kopyalanmaz (NASA'nın
    "14 Kasım 09:00'dan önce projeye başlama" kuralı). Genel kurulum kodu kaynak gösterilerek kullanılabilir.
 8. İşin sonunda kısaca özetle: hangi dosyalar değişti, hangi komutlar çalıştı, sonuç ne, eksik ne.
+
+## GitHub kuralları
+- Bu repoda herkes `main`'e **doğrudan push** edebilir, ama **sadece kendi klasörünü** değiştirerek.
+- Push'tan önce **pull** et (`git pull`); çakışma olursa başkasının dosyasını ezme, kullanıcıya sor.
+- **Asla** force-push yapma, push edilmiş geçmişi yeniden yazma, başkasının dalını silme.
+- **Repo ayarları, görünürlük (özel/açık), işbirlikçiler ve repo silme sahibine (Mert) aittir.** Ajanlar bunlara dokunmaz.
+- Sadece çalıştırıp kontrol ettiğin işi push et.
