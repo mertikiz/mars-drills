@@ -18,7 +18,7 @@ Ekran üzerindeki buton/menü adları **İngilizce** yazıldı, çünkü arayüz
    (sadece davet edilen hesapta çalışır):
    - `https://github.com/mertikiz/mars-drills/invitations`
    - `https://github.com/mertikiz/moon-practice/invitations`
-   - `https://github.com/mertikiz/nasa-space-apps-2026/invitations` (özel planlama reposu)
+   - `https://github.com/mertikiz/space-apps-2026-team/invitations` (özel takım reposu: plan ve kararlar)
    Davetler **7 gün** içinde kabul edilmezse süresi dolar; yenisi gönderilir.
 
 ## 2. Programları kur (Windows)
@@ -50,9 +50,9 @@ Projeler için bir klasör seç, orada terminal aç:
 ```powershell
 git clone https://github.com/mertikiz/mars-drills.git
 git clone https://github.com/mertikiz/moon-practice.git
-git clone https://github.com/mertikiz/nasa-space-apps-2026.git
+git clone https://github.com/mertikiz/space-apps-2026-team.git
 ```
-İlk seferde GitHub girişi için bir pencere açılabilir; GitHub hesabınla giriş yap. (Planlama reposu özeldir: daveti
+İlk seferde GitHub girişi için bir pencere açılabilir; GitHub hesabınla giriş yap. (Takım reposu özeldir: daveti
 kabul etmeden indiremezsin.)
 
 ## 4. Çalışma kuralları (kısa)

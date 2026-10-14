@@ -9,7 +9,7 @@ Bu repoda çalışan **tüm yapay zekâ ajanları** (Google Antigravity, Claude 
 
 ## Bu repo ne?
 - NASA Space Apps 2026 (görev: "Interplanetary Survival Guide: Martian Map") için **bireysel araç alıştırmaları**.
-  Yarışma projesi **değil**. Plan ve kararlar özel planlama reposunda (`nasa-space-apps-2026`).
+  Yarışma projesi **değil**. Plan ve kararlar özel takım reposunda (`space-apps-2026-team`).
 - Teknoloji: **React + Vite + TypeScript**, harita **OpenLayers + proj4**, arayüz **Tailwind + shadcn/ui**, grafik
   **Recharts**, yayın **Cloudflare Pages**; veri işleme için küçük **Python** betikleri (rasterio, GeoPandas).
   Kullanılan paket sürümlerini kontrol et (`package.json`); eski OpenLayers sürümlerinin API'siyle karıştırma.

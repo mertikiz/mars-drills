@@ -5,8 +5,8 @@ verisiyle küçük alıştırmalar yapar. Amaç araçları öğrenmek; **bu repo
 
 > **İlk kez mi geliyorsun?** Önce [`KURULUM.md`](KURULUM.md) (bir kerelik kurulum, ~1 saat).
 >
-> Ajanlar ve takım: kurallar [`AGENTS.md`](AGENTS.md) içinde. Planın tamamı ve karar listesi özel planlama
-> reposunda (`nasa-space-apps-2026`): `README.md` → `docs/notes/plan-current.md` → `docs/notes/prep-plan.md`.
+> Ajanlar ve takım: kurallar [`AGENTS.md`](AGENTS.md) içinde. Planın tamamı ve karar listesi özel takım
+> reposunda (`space-apps-2026-team`): `README.md` → `docs/notes/plan-current.md` → `docs/notes/prep-plan.md`.
 
 ## Klasör düzeni
 ```
