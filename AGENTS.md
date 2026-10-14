@@ -31,6 +31,12 @@ Bu repoda çalışan **tüm yapay zekâ ajanları** (Google Antigravity, Claude 
 7. Bu alıştırmalarda yazılan **Mars'a özgü mantık, veri işleme ve rota kodu** yarışma reposuna kopyalanmaz (NASA'nın
    "14 Kasım 09:00'dan önce projeye başlama" kuralı). Genel kurulum kodu kaynak gösterilerek kullanılabilir.
 8. İşin sonunda kısaca özetle: hangi dosyalar değişti, hangi komutlar çalıştı, sonuç ne, eksik ne.
+9. **Commit'ten önce değişiklik özeti:** `git status` ve `git diff --stat` sonucunu göster. Görevle ilgisiz bir dosya
+   değiştiyse ya da mevcut bir kod silindiyse bunu açıkça söyle ve geri almayı öner.
+10. **İki deneme kuralı:** aynı hatayı iki denemede çözemezsen dur. Ne denediğini, hatanın tam metnini ve bir sonraki
+    küçük adımı yaz, kullanıcıdan yön iste; körlemesine denemeye devam etme.
+11. **Anlat:** iş bitince yazdığın kodun ne yaptığını kısa ve Türkçe anlat (hangi dosya ne yapıyor, veri nereden gelip
+    nereye gidiyor). Kullanıcı sorarsa satır satır açıkla. Amaç: kullanıcı kodu jüriye kendisi anlatabilsin.
 
 ## GitHub kuralları
 - Bu repoda herkes `main`'e **doğrudan push** edebilir, ama **sadece kendi klasörünü** değiştirerek.

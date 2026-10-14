@@ -66,8 +66,9 @@ kabul etmeden indiremezsin.)
    Replace" sorarsa **Replace** seç.
 2. **Giriş:** Google AI Pro olan Google hesabınla giriş yap.
 3. **Para harcamasını kapat:** ayarlarda **AI Credit Overages** → **Never**. (Kota bitince ücretli kredi kullanmasın.)
-4. **Kotanı not et:** ayarlarda görünen kullanım/kota bilgisini ekibe yaz. (Pro: 5 saatte bir yenilenir, haftalık
-   üst sınırı var.)
+4. **Kota ve modeller:** **Settings** sayfasında kotanın yanındaki geri sayımı ("Refreshes in …") Mert'e yaz.
+   (Pro: 5 saatte bir yenilenir, haftalık üst sınırı var.) Model seçicide **Claude Sonnet 5.5 / Opus 5.5** görünüyor mu,
+   onu da yaz.
 5. **Güvenli izinler:** Windows'ta terminal komutları varsayılan olarak **onay ister**; böyle kalsın. **"Turbo"**
    gibi her şeye izin veren ayarları açma.
 6. **Proje oluştur:** yeni bir proje aç ve `mars-drills` klasörünü ekle.
@@ -75,7 +76,8 @@ kabul etmeden indiremezsin.)
 7. **İlk deneme (Türkçe yazabilirsin):**
    - "Bu repodaki README ve AGENTS.md'yi oku ve hangi kurallara uyacağını özetle." (hiçbir şey değiştirmemeli)
    - "Kendi klasörümde (`<kullanici-adin>/D0-kavramlar/`) boş bir notlar.md dosyası oluştur." → önce **plan**
-     göstermeli; sen **Proceed** dersin; sonra değişikliği (diff) kontrol edersin.
+     göstermeli; sen **Proceed** dersin. Sonra şunlara bak: commit'ten önce **değişiklik özetini** gösterdi mi, işi
+     **Türkçe anlattı mı**? (Bunlar `AGENTS.md`'deki kurallar.) Göstermediyse veya Türkçeyi yanlış anladıysa Mert'e söyle.
    - `/plan` komutu her zaman önce plan yaptırır.
 8. Ajanın yaptığı her değişikliği **oku**, çalıştırıp dene, sonra commit et.
 
