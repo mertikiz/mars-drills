@@ -17,7 +17,9 @@ verisiyle küçük alıştırmalar yapar. Amaç araçları öğrenmek; **bu repo
   D2-mars-haritasi/    React + Vite + TypeScript + OpenLayers ile Mars Trek haritası (yayında)
   D4-gezgin-rotasi/    VEYA  D6-kosul-verisi/   (ikisinden birini sen yaparsın)
   D5-yukseklik/        (isteğe bağlı)
+  calisma-gunlugu.md   her oturum sonunda bir satır (sablonlar/calisma-gunlugu.md'den kopyala)
 sablonlar/veri-karti.md   her veri seti için doldurulacak "veri kartı" şablonu
+sablonlar/calisma-gunlugu.md   çalışma günlüğü şablonu (öğrenme + kota + yapay zekâ beyanı)
 ```
 
 ## Alıştırmalar ve doğrulanmış veri kaynakları
@@ -36,6 +38,19 @@ sablonlar/veri-karti.md   her veri seti için doldurulacak "veri kartı" şablon
 2. **Durma kuralı:** planlanan sürenin 1,5 katını geçersen dur, neye takıldığını yaz, devam et.
 3. **10 dakikalık anlatım:** ekibe verinin ne söylediğini **ve ne söylemediğini** anlat.
 4. Her oturum sonunda **commit + push**.
+5. **Çalışma günlüğüne** bir satır ekle (2–3 dk; `sablonlar/calisma-gunlugu.md`).
+
+## Ajanla (Antigravity vb.) çalışırken
+- **Önce plan:** ajandan önce plan iste; plan ilgisiz dosyalara dokunuyor, yeni paket ekliyor ya da işi büyütüyorsa
+  onaylama. İşi küçük parçalara böl: beklenen değişikliği birkaç cümleyle anlatamıyorsan iş fazla büyüktür.
+- **Diff kontrolü:** commit'ten önce değişikliklere bak (Antigravity'nin inceleme paneli ya da `git status` →
+  `git diff`). Sorular: Ben bunu mu istedim? İlgisiz dosya değişmiş mi? Gerekli bir kod silinmiş mi?
+- **İki deneme kuralı:** ajan aynı hatayı iki denemede çözemezse durdur; ne denediğini özetletip hatayı kendin oku.
+- **Kendin çalıştır:** "testler geçti" mesajına güvenme; uygulamayı kendin aç, haritada konumu bilinen bir noktayı kontrol et.
+- **Anlatamadığını birleştirme:** kodun ne yaptığını anlatamıyorsan önce ajana açıklat, sonra kendin anla.
+- **Git ile geri dönme alıştırması (bir kere, 30–45 dk):** bir deneme branch'inde bilerek bir şey boz ve geri al:
+  tek dosyayı geri alma (`git restore <dosya>`), commit'i geri alma (`git revert <commit>`), branch'i bırakıp
+  `main`'e dönme. `git reset --hard` ve `git clean` komutlarını refleks olarak kullanma; kaydedilmemiş işi siler.
 
 ## Kurallar
 - Sadece **kendi klasörünü** değiştir. Büyük veri dosyalarını commit etme (`data/` klasörü git'e girmez).
