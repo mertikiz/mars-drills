@@ -14,7 +14,7 @@ verisiyle küçük alıştırmalar yapar. Amaç araçları öğrenmek; **bu repo
   D0-kavramlar/        notlar (raster/vektör, koordinat sistemleri, çözünürlük)
   D1-mars-trek/        Mars Trek turu: ekran görüntüsü + "Trek'in yapamadığı 3 şey"
   D3-inis-noktalari/   iniş noktaları haritada (pin)
-  D2-mars-haritasi/    React + Vite + Leaflet ile Mars Trek haritası (yayında)
+  D2-mars-haritasi/    React + Vite + TypeScript + OpenLayers ile Mars Trek haritası (yayında)
   D4-gezgin-rotasi/    VEYA  D6-kosul-verisi/   (ikisinden birini sen yaparsın)
   D5-yukseklik/        (isteğe bağlı)
 sablonlar/veri-karti.md   her veri seti için doldurulacak "veri kartı" şablonu
@@ -25,8 +25,8 @@ sablonlar/veri-karti.md   her veri seti için doldurulacak "veri kartı" şablon
 |---|---|---|
 | D0 | Kavramları oku (1 saat) | — |
 | D1 | [JPL "Map a Mars Rover Driving Route"](https://www.jpl.nasa.gov/edu/resources/project/map-a-mars-rover-driving-route/) etkinliğini [Mars Trek](https://trek.nasa.gov/mars/)'te yap (kod yok) | Mesafe ve "Elevation Profile" araçlarını dene |
-| D3 | Geçmiş Mars iniş noktalarını haritaya pin olarak koy | **GeoJSON sırası [boylam, enlem]**; Leaflet `L.marker` ise [enlem, boylam] ister. 0–360° boylamı: `lon > 180 ? lon - 360 : lon` |
-| D2 | Mars Trek karolarını React + Vite + Leaflet'te göster, yayına al | Karo adresi: `https://trek.nasa.gov/tiles/Mars/EQ/Mars_Viking_MDIM21_ClrMosaic_global_232m/1.0.0/default/default028mm/{z}/{y}/{x}.jpg` · ⚠️ Leaflet'te **`crs: L.CRS.EPSG4326`** kullan (varsayılan ayar Mars'ı yanlış yere koyar) |
+| D3 | Geçmiş Mars iniş noktalarını haritaya pin olarak koy | **GeoJSON sırası [boylam, enlem]** (OpenLayers da bu sırayı kullanır). 0–360° boylamı: `lon > 180 ? lon - 360 : lon` |
+| D2 | Mars Trek karolarını React + Vite + TypeScript + **OpenLayers**'ta göster, **Cloudflare Pages**'e yayınla | Trek'in ızgara bilgisi: `https://trek.nasa.gov/tiles/Mars/EQ/Mars_Viking_MDIM21_ClrMosaic_global_232m/1.0.0/WMTSCapabilities.xml` → OpenLayers'ta `WMTSCapabilities` ile oku, katmanı `optionsFromCapabilities` ile kur. Trek'in koordinat sistemi `EPSG::104905` (Mars, enlem/boylam); **proj4** ile tanımlayıp OpenLayers'a kaydet (`register(proj4)`). Doğru yere oturduğunu bilinen bir noktayla kontrol et (ör. Perseverance iniş yeri). ⚠️ Haritayı Dünya'nın varsayılan web projeksiyonunda bırakma |
 | D4 | Perseverance'ın gerçek rotasını çizgi olarak çiz, uzunluğunu hesapla | NASA'nın resmî dosyası: `https://mars.nasa.gov/mmgis-maps/M20/Layers/json/M20_traverse.json` (1,7 MB; büyük olduğu için sadeleştir) |
 | D6 | Gezgin hava verisini grafik yap | [MEDA (Perseverance)](https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/PERSEVERANCE/meda.html) CSV dizinleri · [REMS (Curiosity)](https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/MARS/curiosity/rems.html). Alternatif: uzay havası API'si `https://ccmc.gsfc.nasa.gov/DONKI-API/get/FLR?startDate=…&endDate=…` (anahtar gerekmez); **bu Mars yüzey havası değildir** |
 | D5 | (isteğe bağlı) Yükseklik profili: MOLA vs. HiRISE | [USGS HiRISE DTM'leri](https://stac.astrogeology.usgs.gov/docs/data/mars/hirise_dtms/) (Cloud-Optimized GeoTIFF), Python |

@@ -10,7 +10,9 @@ Bu repoda çalışan **tüm yapay zekâ ajanları** (Google Antigravity, Claude 
 ## Bu repo ne?
 - NASA Space Apps 2026 (görev: "Interplanetary Survival Guide: Martian Map") için **bireysel araç alıştırmaları**.
   Yarışma projesi **değil**. Plan ve kararlar özel planlama reposunda (`nasa-space-apps-2026`).
-- Teknoloji: **React + Vite + Leaflet** (web), veri işleme için küçük **Python** betikleri.
+- Teknoloji: **React + Vite + TypeScript**, harita **OpenLayers + proj4**, arayüz **Tailwind + shadcn/ui**, grafik
+  **Recharts**, yayın **Cloudflare Pages**; veri işleme için küçük **Python** betikleri (rasterio, GeoPandas).
+  Kullanılan paket sürümlerini kontrol et (`package.json`); eski OpenLayers sürümlerinin API'siyle karıştırma.
 - Her kişi kendi klasöründe (`<github-kullanici-adi>/Dx-.../`) çalışır.
 
 ## Kurallar
@@ -18,7 +20,10 @@ Bu repoda çalışan **tüm yapay zekâ ajanları** (Google Antigravity, Claude 
 2. Sadece kullanıcının **kendi klasöründeki** dosyaları değiştir; başkasının klasörüne dokunma.
 3. **Veri uydurma.** URL, uç nokta (endpoint), veri seti adı veya sonuç uydurma; emin değilsen "doğrulanmadı" de.
    README'deki doğrulanmış kaynakları kullan.
-4. Mars koordinatları: GeoJSON **[boylam, enlem]**; Mars Trek karoları için Leaflet'te `crs: L.CRS.EPSG4326`.
+4. Mars koordinatları: GeoJSON **[boylam, enlem]**. Mars Trek karoları için OpenLayers'ta katmanı Trek'in
+   `WMTSCapabilities.xml` dosyasından kur (`optionsFromCapabilities`) ve Mars koordinat sistemini proj4 ile tanımla;
+   haritayı Dünya'nın varsayılan web projeksiyonunda bırakma. Mesafeleri **Mars yarıçapıyla** hesapla (Turf.js varsayılan
+   olarak Dünya yarıçapını kullanır).
 5. Her veri seti için bir **veri kartı** doldurulmasına yardım et (kaynak, görev/alet, ürün kimliği, URL, tarih,
    lisans, koordinat sistemi, birimler, çözünürlük, kapsam, sınırlamalar).
 6. **Git:** commit/push sadece kullanıcı isteyince. Force-push, `reset --hard`, dal silme yok. **Asla** gizli bilgi
