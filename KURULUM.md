@@ -20,6 +20,8 @@ Ekran üzerindeki buton/menü adları **İngilizce** yazıldı, çünkü arayüz
    - `https://github.com/mertikiz/moon-practice/invitations`
    - `https://github.com/mertikiz/space-apps-2026-team/invitations` (özel takım reposu: plan ve kararlar)
    Davetler **7 gün** içinde kabul edilmezse süresi dolar; yenisi gönderilir.
+4. **Takvim:** [Space Apps 2026 - Takvim](https://github.com/users/mertikiz/projects/1) (GitHub Projects). Ayrı bir
+   davet yok; takım reposunun davetini kabul edince görünür. Her iş bir issue: bitirince kendi issue'nu kapat.
 
 ## 2. Programları kur (Windows)
 | Program | Nereden | Dikkat |
