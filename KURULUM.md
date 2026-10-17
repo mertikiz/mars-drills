@@ -83,6 +83,28 @@ kabul etmeden indiremezsin.)
    - `/plan` komutu her zaman önce plan yaptırır.
 8. Ajanın yaptığı her değişikliği **oku**, çalıştırıp dene, sonra commit et.
 
+## 5b. Antigravity yerine Claude Code kullanıyorsan
+Bölüm 1–4 aynı; bölüm 5'in yerine bunu yap. (Kaynak: Claude Code'un resmî kurulum sayfası, code.claude.com/docs/en/setup.)
+1. **Abonelik:** Claude Code için **Claude Pro veya Max** gerekir; ücretsiz Claude planında Claude Code yok.
+2. **Kur:** PowerShell aç (komut satırında `PS C:\` görünür) ve çalıştır:
+   ```powershell
+   irm https://claude.ai/install.ps1 | iex
+   ```
+   İndirirken ilerleme göstermez, bekle. Bitince **yeni** bir terminal aç ve `claude --version` yaz; bir sürüm numarası
+   çıkmalı. Terminal istemiyorsan Claude masaüstü uygulamasını (claude.com/download) kurup **Code** sekmesini de
+   kullanabilirsin. Git for Windows bölüm 2'de zaten kuruldu; Claude Code onu kullanır.
+3. **Giriş:** bir repo klasöründe terminal aç, `claude` yaz, tarayıcıda Claude hesabınla giriş yap.
+4. **Kurallar otomatik:** Claude Code repodaki `CLAUDE.md` dosyasını okur; o dosya da `AGENTS.md`'yi içe aktarır, yani
+   ekstra ayar yok. `CLAUDE.md` ayrıca Mert'in bilgisayarındaki kişisel bir not dosyasını içe aktarmaya çalışır; o dosya
+   sende yok. Bununla ilgili bir izin ya da uyarı çıkarsa reddedebilirsin, sorun değil.
+5. **Kota:** Pro/Max'te 5 saatlik ve haftalık kullanım limiti var. Oturumdayken `/usage` yaz: kullanımını ve limitlerin
+   ne zaman yenileneceğini gösterir. Yenilenme zamanını Mert'e yaz.
+6. **İzinler:** Claude Code dosya değiştirmeden ve komut çalıştırmadan önce izin sorar; böyle kalsın. Her şeye otomatik
+   izin veren modları açma.
+7. **İlk deneme:** bölüm 5'in 7. adımındaki iki görevin aynısını Claude Code'a ver (README ve AGENTS.md'yi okuyup
+   özetlemesi; kendi klasöründe boş bir `notlar.md` oluşturması). Önce plan sunuyor mu, commit'ten önce değişiklik
+   özetini gösteriyor mu, işi Türkçe anlatıyor mu, bak.
+
 ## 6. Yedek araç: VS Code + Cline
 Antigravity'nin kotası biterse:
 1. VS Code → **Extensions** → "Cline" ara → kur.
