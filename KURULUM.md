@@ -3,8 +3,8 @@
 Bu rehber bilgisayarını NASA Space Apps hazırlığı için hazırlar. Sırayla git; takıldığın yeri ekibe yaz.
 Ekran üzerindeki buton/menü adları **İngilizce** yazıldı, çünkü arayüzde öyle görünüyor.
 
-> Not: Yapay zekâ kodlama aracı olarak şu an **Google Antigravity** seçili (bölüm 5). Araçları ekipçe daha ayrıntılı
-> konuşacağız; değişirse bu bölüm güncellenir. Bölüm 1–4 her durumda geçerli.
+> Not: Yapay zekâ kodlama aracı olarak **Google Antigravity** (bölüm 5) ya da **Claude Code** (bölüm 5b) kullanılabilir;
+> ikisi de aynı `AGENTS.md` kurallarını okur. Bölüm 1–4 her durumda geçerli.
 
 ## 1. GitHub hesabı ve e-posta gizliliği
 1. GitHub hesabın yoksa github.com'da oluştur. **Kullanıcı adını (username)** takıma gönder: davetler bununla yapılır
@@ -22,6 +22,10 @@ Ekran üzerindeki buton/menü adları **İngilizce** yazıldı, çünkü arayüz
    Davetler **7 gün** içinde kabul edilmezse süresi dolar; yenisi gönderilir.
 4. **Takvim:** [Space Apps 2026 - Takvim](https://github.com/users/mertikiz/projects/1) (GitHub Projects). Ayrı bir
    davet yok; takım reposunun davetini kabul edince görünür. Her iş bir issue: bitirince kendi issue'nu kapat.
+   **Issue nasıl kapatılır:** issue'nu aç (takvimdeki kartından ya da takım reposunun **Issues** sekmesinden) → en
+   altta istersen ne yaptığını bir cümleyle yaz (ör. haritanın linki) → **Close issue** düğmesine bas (yorum yazdıysan
+   düğmenin adı **Close with comment** olur). Takvim kendiliğinden güncellenir. Takıldıysan kapatma; aynı yere yorum
+   olarak yaz.
 
 ## 2. Programları kur (Windows)
 | Program | Nereden | Dikkat |
